@@ -20,9 +20,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from myapp import views
+#from myapp import views
+from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('prueba/', views.index, name="indexx"),
+    path('blog/', views.post_list, name="post_list")
 ]
